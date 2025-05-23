@@ -74,7 +74,7 @@
             <div id="input-container" class="col-12">
                 <div class="input-group mb-2">
                     <select id="model-select" class="form-select">
-                        <option value="anthropic/claude-3.5-sonnet-20240620:beta">Claude sonnet beta(gratis)</option>
+                        <option value="google/gemma-3n-e4b-it:free">Claude sonnet beta(gratis)</option>
                         <option value="meta-llama/llama-3.3-8b-instruct:free">Meta llama-3 (gratis)</option>
                     </select>
                 </div>
@@ -113,7 +113,8 @@
             messageInput.value = "";
 
             try {
-                const response = await fetch("https://ai-chat-dpy.onrender.com", {
+                //const response = await fetch("https://ai-chat-dpy.onrender.com", {
+                const response = await fetch("https://ai-chat-dpy.onrender.com/ai-chat", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
